@@ -1,0 +1,18 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Custom files
+*.console
+*~.ilocalize
+**/Base.lproj/Localizable.strings
+
+# ignore all remote sources
+**/remote-sources/**
+# ignore user files
+xcuserdata

@@ -1,0 +1,18 @@
+/* 
+  Localize.strings
+  HPBookstore
+
+  Created by Nabil El khaddari on 04/03/2021.
+  
+*/
+
+"error_decode"="Impossible de décoder l'objet";
+"error_with_code"="Une erreur %@ est survenue";
+"error_unknown"="Erreur inconnue";
+"list_title"="Livres";
+"buy_button"="Acheter";
+"done_button"="D'accord";
+"empty_cart"="Merci de choisir au moins un livre";
+"total"="Total";
+"discount"="Remise";
+"discount_price"="Montant à payer";

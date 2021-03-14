@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" id="GtV-oj-ElC" customClass="OfferView" customModule="HPBookstore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGb-z3-HM5">
+                    <rect key="frame" x="0.0" y="0.0" width="330" height="36.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ9-at-HVS">
+                            <rect key="frame" x="16" y="8" width="40" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="total"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFo-6l-OGr">
+                            <rect key="frame" x="308" y="8.5" width="6" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EJ9-at-HVS" secondAttribute="bottom" constant="8" id="088-R0-dOv"/>
+                        <constraint firstItem="XFo-6l-OGr" firstAttribute="centerY" secondItem="lGb-z3-HM5" secondAttribute="centerY" id="8rB-RT-LBP"/>
+                        <constraint firstAttribute="trailing" secondItem="XFo-6l-OGr" secondAttribute="trailing" constant="16" id="Kp9-RU-GFH"/>
+                        <constraint firstItem="EJ9-at-HVS" firstAttribute="leading" secondItem="lGb-z3-HM5" secondAttribute="leading" constant="16" id="tOJ-wL-PP9"/>
+                        <constraint firstItem="XFo-6l-OGr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EJ9-at-HVS" secondAttribute="trailing" constant="8" id="ukv-LF-jIg"/>
+                        <constraint firstItem="EJ9-at-HVS" firstAttribute="top" secondItem="lGb-z3-HM5" secondAttribute="top" constant="8" id="vaY-QB-NvT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-cv-svB">
+                    <rect key="frame" x="0.0" y="36.5" width="330" height="37"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRu-tm-1yJ">
+                            <rect key="frame" x="16" y="8" width="40" height="21"/>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="discount"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh8-zb-uF3">
+                            <rect key="frame" x="308" y="9" width="6" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="dh8-zb-uF3" firstAttribute="centerY" secondItem="MN2-cv-svB" secondAttribute="centerY" id="4F9-qX-rPM"/>
+                        <constraint firstItem="MRu-tm-1yJ" firstAttribute="top" secondItem="MN2-cv-svB" secondAttribute="top" constant="8" id="6Ps-Lo-h6I"/>
+                        <constraint firstItem="MRu-tm-1yJ" firstAttribute="leading" secondItem="MN2-cv-svB" secondAttribute="leading" constant="16" id="Lh3-Bg-q8Q"/>
+                        <constraint firstAttribute="trailing" secondItem="dh8-zb-uF3" secondAttribute="trailing" constant="16" id="MdL-pd-4mH"/>
+                        <constraint firstItem="dh8-zb-uF3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MRu-tm-1yJ" secondAttribute="trailing" constant="8" id="VmT-1S-azj"/>
+                        <constraint firstAttribute="bottom" secondItem="MRu-tm-1yJ" secondAttribute="bottom" constant="8" id="uAi-rR-qqk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izd-Pj-6NM">
+                    <rect key="frame" x="0.0" y="73.5" width="330" height="36.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLM-3e-m4y">
+                            <rect key="frame" x="16" y="8" width="40" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="discount_price"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsr-am-2hA">
+                            <rect key="frame" x="308" y="8.5" width="6" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qsr-am-2hA" secondAttribute="trailing" constant="16" id="GyH-tD-S8u"/>
+                        <constraint firstItem="KLM-3e-m4y" firstAttribute="leading" secondItem="izd-Pj-6NM" secondAttribute="leading" constant="16" id="P7a-VJ-gnA"/>
+                        <constraint firstAttribute="bottom" secondItem="KLM-3e-m4y" secondAttribute="bottom" constant="8" id="cSf-2T-FXw"/>
+                        <constraint firstItem="qsr-am-2hA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KLM-3e-m4y" secondAttribute="trailing" constant="8" id="dNy-iF-ysu"/>
+                        <constraint firstItem="qsr-am-2hA" firstAttribute="centerY" secondItem="izd-Pj-6NM" secondAttribute="centerY" id="qTu-Dk-60M"/>
+                        <constraint firstItem="KLM-3e-m4y" firstAttribute="top" secondItem="izd-Pj-6NM" secondAttribute="top" constant="8" id="r46-Za-Ob7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lf1-kT-nHq"/>
+            <connections>
+                <outlet property="discountLabel" destination="dh8-zb-uF3" id="JkX-pI-bC9"/>
+                <outlet property="discountPriceLabel" destination="qsr-am-2hA" id="Ka1-kD-D2I"/>
+                <outlet property="totalLabel" destination="XFo-6l-OGr" id="nwD-DP-7AZ"/>
+            </connections>
+            <point key="canvasLocation" x="-253.62318840579712" y="35.825892857142854"/>
+        </stackView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

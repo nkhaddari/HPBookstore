@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCartCell" rowHeight="122" id="KGk-i7-Jjw" customClass="BookCartCell" customModule="HPBookstore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gkS-hz-JZQ">
+                        <rect key="frame" x="16" y="16" width="60" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="EHC-d8-DiX"/>
+                            <constraint firstAttribute="width" constant="60" id="Hji-3D-ak5"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IWF-Ua-kxW">
+                        <rect key="frame" x="92" y="31" width="44" height="60.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw6-MT-UeB">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="21"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj1-jh-n0p">
+                                <rect key="frame" x="0.0" y="21" width="44" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD4-IE-44F">
+                                <rect key="frame" x="0.0" y="40.5" width="44" height="20"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl4-oW-EqN">
+                        <rect key="frame" x="8" y="8" width="22" height="22"/>
+                        <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="2Qt-0I-ydA"/>
+                            <constraint firstAttribute="height" constant="22" id="wn4-Jn-34K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="11"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IWF-Ua-kxW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="9CZ-G8-ZFs"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="gkS-hz-JZQ" secondAttribute="bottom" constant="16" id="G3m-00-VsG"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IWF-Ua-kxW" secondAttribute="trailing" constant="16" id="HbK-JG-axb"/>
+                    <constraint firstItem="hl4-oW-EqN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="QoR-UL-69s"/>
+                    <constraint firstItem="IWF-Ua-kxW" firstAttribute="leading" secondItem="gkS-hz-JZQ" secondAttribute="trailing" constant="16" id="Wcs-bp-VM8"/>
+                    <constraint firstItem="gkS-hz-JZQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="hHF-ye-Chh"/>
+                    <constraint firstItem="IWF-Ua-kxW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iLP-l7-TIc"/>
+                    <constraint firstItem="gkS-hz-JZQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="k8y-lV-ddI"/>
+                    <constraint firstItem="hl4-oW-EqN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tLb-bc-O6V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookImageView" destination="gkS-hz-JZQ" id="mh4-XD-1wl"/>
+                <outlet property="countLabel" destination="hl4-oW-EqN" id="J1k-fR-mz9"/>
+                <outlet property="isbnLabel" destination="Qj1-jh-n0p" id="Ffj-bl-XM6"/>
+                <outlet property="priceLabel" destination="QD4-IE-44F" id="dXc-Ao-9iK"/>
+                <outlet property="titleLabel" destination="Yw6-MT-UeB" id="ySh-vD-dGf"/>
+            </connections>
+            <point key="canvasLocation" x="324.63768115942031" y="61.272321428571423"/>
+        </tableViewCell>
+    </objects>
+</document>
